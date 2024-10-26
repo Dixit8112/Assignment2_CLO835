@@ -20,7 +20,7 @@ spec:
         image: 105655153485.dkr.ecr.us-east-1.amazonaws.com/image-app-repo:updated
         env:
         - name: DBHOST
-          value: "db_container.webapp-namespace-assign2.svc.cluster.local"  
+          value: "dbcontainer.webapp-namespace-assign2.svc.cluster.local"  
         - name: DBPORT
           value: "3306"
         - name: DBUSER
