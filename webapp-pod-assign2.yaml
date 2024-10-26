@@ -11,7 +11,7 @@ spec:
     image: 105655153485.dkr.ecr.us-east-1.amazonaws.com/image-app-repo:updated
     env:
     - name: DBHOST
-      value: "dbcontainer.webapp-namespace-assign2.svc.cluster.local"  
+      value: "dbcontainer.mysql-namespace-assign2.svc.cluster.local"  
     - name: DBPORT
       value: "3306"
     - name: DBUSER
@@ -19,7 +19,7 @@ spec:
     - name: DBPWD
       value: "password"
     ports:
-    - containerPort: 8080
+    - containerPort: 80
   imagePullSecrets:
   - name: ecr-registry-secret  
  
